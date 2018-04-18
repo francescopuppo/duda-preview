@@ -1,4 +1,4 @@
-@import "http://fonts.googleapis.com/css?family=Montserrat";
+@import "http://fonts.googleapis.com/css?family=Montserrat:400,700,800";
 body {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -16,6 +16,11 @@ body {
     right: 0;
     bottom: 1em;
     margin-right: 1em;
+    opacity: .6;
+}
+
+.logo:hover {
+ opacity: 1;
 }
 div#main {
     display: -webkit-box;
@@ -67,6 +72,8 @@ select {
     color: #fdfdfd;
     -webkit-transition: all .5s ease;
     /* Safari */
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
     transition: all .25s ease;
 }
 option {
@@ -75,13 +82,16 @@ option {
 
 input:focus,input:hover, select:focus,select:hover {
     -webkit-box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1);
-    -moz-box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1);
     box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1);
     border-color: #e3e8f0;
     background-color: #fdfdfd;
     color: black;
     outline: 0;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -98,6 +108,8 @@ label {
     font-size: 1em;
     -webkit-transition: all .5s ease;
     /* Safari */
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
     transition: all .25s ease;
     border-radius: 0px;
 }
@@ -108,10 +120,23 @@ label {
     border: none;
     font-weight: bold;
     cursor: pointer;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     -webkit-box-shadow: 0 11px 20px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 11px 20px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 11px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    font-size: .7em;
+    color: white;
+    opacity: .5;
+    text-decoration: none;
+    margin-top: 1.3em;
+}
+
+.info:hover {
+    opacity: 1;
 }
 
 @media screen and (max-height:500px) and (max-width:500px) {
@@ -125,5 +150,9 @@ label {
 select, .submit {
     width: 90vw;
     min-width: 90vw;
+}
+.logo {
+    width: 70%;
+    float: right;
 }
 }
