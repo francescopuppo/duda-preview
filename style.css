@@ -81,7 +81,7 @@ option {
     color: black;
 }
 
-input:focus,input:hover, select:focus,select:hover {
+.dudaid:focus,.dudaid:hover, .device:focus,.device:hover {
     -webkit-box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1);
     box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1);
     border-color: #e3e8f0;
@@ -94,6 +94,20 @@ input:focus,input:hover, select:focus,select:hover {
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    min-width: auto;
+    height: auto;
+    margin-top: 2em;
+}
+
+input[type="checkbox"]:after {
+    content: 'I am on Desktop';
+    display: block;
+    position: absolute;
+    margin-left: 20px;
 }
 
 label {
