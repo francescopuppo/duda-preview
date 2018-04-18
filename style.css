@@ -152,7 +152,10 @@ select, .submit {
     min-width: 90vw;
 }
 .logo {
-    width: 70%;
+    width: 50%;
+    float: right;
+}
+.logo img {
     float: right;
 }
 }
