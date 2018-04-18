@@ -63,12 +63,14 @@ select {
     width: 30vw;
     min-width: 400px;
     height: 35px;
-    border: 1px solid #fdfdfd;
+    border:none;
+    border-bottom: solid 2px rgba(255,255,255,.5);
+    color: white;
+    background: rgba(236, 94, 8, .7);
     padding-left: 10px;
     margin-top: 1em;
     border-radius: 0px;
     font-size: 1em;
-    background: transparent;
     color: #fdfdfd;
     -webkit-transition: all .5s ease;
     /* Safari */
