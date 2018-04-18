@@ -20,14 +20,15 @@
         <h1>Duda Preview</h1>
         <form id="form" method="post" name="form">
             <label>Duda ID</label>
-            <input class="name" type="text" name="dudaid" id="dudaid">
+            <input class="dudaid" type="text" name="dudaid" id="dudaid">
             <br/>
             <label>Device</label>
-            <select id="device">
+            <select class="device" id="device">
                 <option value="mobile">Mobile</option>
                 <option value="tablet">Tablet</option>
                 <option value="desktop">Desktop</option>
             </select>
+            <input type="checkbox" name="iamdesktop" value="iamdesktop"><br>
             <br/>
             <input class="submit" id="submit" type="submit" value="Go to Preview">
         </form>
