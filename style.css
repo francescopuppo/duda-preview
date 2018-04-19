@@ -104,7 +104,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:after {
-    content: 'I am on Desktop';
+    content: 'Use Standard Duda Preview';
     display: block;
     position: absolute;
     margin-left: 20px;
