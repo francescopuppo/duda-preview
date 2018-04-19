@@ -9,3 +9,16 @@ $(document).ready(function () {
         }
     });
 });
+
+function hideMe(device) {
+        
+    var chboxs = document.getElementsByName("iamdesktop");
+    var vis = "block";
+    for(var i=0;i<chboxs.length;i++) { 
+        if(chboxs[i].checked){
+         vis = "none";
+            break;
+        }
+    }
+    document.getElementById(device).style.display = vis;
+}
