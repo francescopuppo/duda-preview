@@ -13,9 +13,9 @@
 </head>
 
 <body>
-        <a class="logo" href="https://www.spotzer.com/" target="_blank">
-    <img src="https://www.spotzer.com/wp-content/uploads/2017/08/spotzer-white-logo.png" ></img>
-</a>
+    <a class="logo" href="https://www.spotzer.com/" target="_blank">
+        <img src="https://www.spotzer.com/wp-content/uploads/2017/08/spotzer-white-logo.png"></img>
+    </a>
     <div id="main">
         <h1>Duda Preview</h1>
         <form id="form" name="form" method="post">
@@ -28,7 +28,11 @@
                 <option value="tablet">Tablet</option>
                 <option value="desktop">Desktop</option>
             </select>
-            <input type="checkbox" name="iamdesktop" id="iamdesktop" value="iamdesktop" onclick="hideMe('device')"><br>
+            <div class="desktopcheck">
+                <input type="checkbox" class="iamdesktop" name="iamdesktop" id="iamdesktop" value="iamdesktop" onclick="hideMe('device')">
+                <br>
+                <div class="iamdesktoptext">Use Duda Standard Preview</div>
+            </div>
             <br/>
             <input class="submit" id="submit" type="submit" value="Go to Preview">
         </form>

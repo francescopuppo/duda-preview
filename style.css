@@ -1,26 +1,21 @@
-body {
+html {
+    height: 100vh;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+
     background-image: url(https://www.spotzer.com/wp-content/uploads/2017/09/circles_background.png?id=134);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-}
-
-.logo {
-    position: absolute;
-    right: 0;
-    bottom: 1em;
-    margin-right: 1em;
-    opacity: .6;
-}
-
-.logo:hover {
-    opacity: 1;
+    height: auto;
+    display: flex;
 }
 
 div#main {
@@ -85,7 +80,6 @@ option {
     color: black;
 }
 
-
 .dudaid:focus,
 .dudaid:hover,
 .device:focus,
@@ -104,27 +98,34 @@ option {
     transition: all .5s ease;
 }
 
-input[type="checkbox"] {
-    width: auto;
-    min-width: auto;
-    height: auto;
+.desktopcheck {
+    display: flex;
+    flex-direction: row;
     margin-top: 2em;
+    width: 100%;
 }
 
-input[type="checkbox"]:after {
-    content: 'Use Standard Duda Preview';
-    display: block;
-    position: absolute;
-    margin-left: 20px;
+.iamdesktop {
+    width: 5%;
+    min-width: 5%;
+    margin-top: 0;
+    height: 20px;
+    margin-left: 0;
+}
+
+.iamdesktoptext {
+    width: 90%;
+    text-align: left;
 }
 
 label {
     font-size: 1.2em;
+    margin-top: 2em;
 }
 
 .submit {
     height: 3em;
-    margin-top: 1em;
+    margin-top: 3em;
     border: solid 2px white;
     color: white;
     background: transparent;
@@ -162,8 +163,24 @@ label {
     opacity: 1;
 }
 
-.hidden {
-    display: none;
+
+.logo {
+    position: absolute;
+    right: 0;
+    bottom: 1em;
+    margin-right: 1em;
+    opacity: .6;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:850px) {
+    .logo img {
+        float: right;
+        width: 50%;
+    }
 }
 
 @media screen and (max-height:500px) and (max-width:500px) {
@@ -172,15 +189,11 @@ label {
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:700px) {
     input,
     select,
     .submit {
         width: 90vw;
         min-width: 90vw;
-    }
-    .logo img {
-        float: right;
-        width: 50%;
     }
 }
