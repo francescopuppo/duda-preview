@@ -90,9 +90,9 @@ option {
     background-color: #fdfdfd;
     color: black;
     outline: 0;
-    -webkit-transform: scale(1.1);
+    /* -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.1); */
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
