@@ -129,12 +129,11 @@ label {
     border: solid 2px white;
     color: white;
     background: transparent;
-    font-size: 1em;
-    -webkit-transition: all .5s ease;
+    -webkit-transition: all 1s ease;
     /* Safari */
-    -webkit-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     border-radius: 0px;
 }
 
