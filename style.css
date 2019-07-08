@@ -126,7 +126,7 @@ label {
 .submit {
     height: 3em;
     margin-top: 3em;
-    border: solid 2px white;
+    border: solid 2px #ffffff;
     color: white;
     background: transparent;
     -webkit-transition: all 1s ease;
